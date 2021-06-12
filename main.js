@@ -58,7 +58,7 @@ function mathOperation() {
   } else if (lastOperation === "/") {
     result = parseFloat(result) / parseFloat(dis2Num);
   } else if (lastOperation === "%") {
-    result = parseFloat(result) % parseFloat(dis2Num);
+    result = parseFloat(result) * parseFloat(dis2Num) / 100;
   }
 }
 // operation();
